@@ -1,0 +1,47 @@
+/*@!Encoding:936*/
+includes
+{
+  
+  
+}
+
+variables
+{
+  pg RQST rqst;
+  int tcfg2_sa = 0;
+  Timer timer1;
+}
+
+void rqst_tcfg2()
+{
+      rqst.sa = tcfg2_sa;
+    rqst.da = 3;
+    rqst.ParameterGroupNumber = 0xfe4b;
+    
+    output(rqst);
+    tcfg2_sa++;
+    setTimer(timer1, 2);
+}
+
+on key 'a'
+{
+  tcfg2_sa = 0;
+  rqst_tcfg2();
+    
+  
+}
+
+on timer timer1
+{
+  write("source address: %d test faild", tcfg2_sa);
+}
+
+on pg TCFG2_TX_SA_03
+{
+  cancelTimer(timer1);
+  if(tcfg2_sa<254)
+  {
+    write("source address: %d test passed", tcfg2_sa);
+    rqst_tcfg2();
+  }
+}

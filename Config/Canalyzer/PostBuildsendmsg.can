@@ -1,0 +1,369 @@
+/*@!Encoding:1252*/
+includes
+{
+}
+variables
+{      
+     message PB_RxMsg1Can1 MsgPB_RxMsg1Can1;
+     message PB_RxMsg2Can1 MsgPB_RxMsg2Can1;
+     message PB_RxMsg3Can1 MsgPB_RxMsg3Can1;
+     message PB_RxMsg4Can1 MsgPB_RxMsg4Can1;
+     message PB_RxMsg5Can1 MsgPB_RxMsg5Can1;
+     message PB_RxMsg6Can1 MsgPB_RxMsg6Can1;
+     message PB_RxMsg7Can1 MsgPB_RxMsg7Can1;
+     message PB_RxMsg8Can1 MsgPB_RxMsg8Can1;
+     message PB_RxMsg9Can1 MsgPB_RxMsg9Can1;
+     message PB_RxMsg10Can1 MsgPB_RxMsg10Can1;
+     message PB_RxMsg11Can1 MsgPB_RxMsg11Can1;
+     message PB_RxMsg12Can1 MsgPB_RxMsg12Can1;
+     message PB_RxMsg13Can1 MsgPB_RxMsg13Can1;
+     message PB_RxMsg14Can1 MsgPB_RxMsg14Can1;
+     message PB_RxMsg15Can1 MsgPB_RxMsg15Can1;
+     message CAN2.PB_RxMsg1Can2 MsgPB_RxMsg1Can2;
+     message CAN2.PB_RxMsg2Can2 MsgPB_RxMsg2Can2;
+     message CAN2.PB_RxMsg3Can2 MsgPB_RxMsg3Can2;
+     message CAN2.PB_RxMsg4Can2 MsgPB_RxMsg4Can2;
+     message CAN2.PB_RxMsg5Can2 MsgPB_RxMsg5Can2;
+     message CAN2.PB_RxMsg6Can2 MsgPB_RxMsg6Can2;
+     message CAN2.PB_RxMsg7Can2 MsgPB_RxMsg7Can2;
+     message CAN2.PB_RxMsg8Can2 MsgPB_RxMsg8Can2;
+     message CAN2.PB_RxMsg9Can2 MsgPB_RxMsg9Can2;
+     message CAN2.PB_RxMsg10Can2 MsgPB_RxMsg10Can2;
+     message CAN2.PB_RxMsg11Can2 MsgPB_RxMsg11Can2;
+     message CAN2.PB_RxMsg12Can2 MsgPB_RxMsg12Can2;
+     message CAN2.PB_RxMsg13Can2 MsgPB_RxMsg13Can2;
+     message CAN2.PB_RxMsg14Can2 MsgPB_RxMsg14Can2;
+     message CAN2.PB_RxMsg15Can2 MsgPB_RxMsg15Can2;
+}
+on key 'a'{
+     Rx_PB_RxMsg1Can1(0xffffffff);
+     Rx_PB_RxMsg2Can1(999);
+     Rx_PB_RxMsg3Can1(999);
+     Rx_PB_RxMsg4Can1(999);
+     Rx_PB_RxMsg5Can1(999);
+     Rx_PB_RxMsg6Can1(999);
+     Rx_PB_RxMsg7Can1(999);
+     Rx_PB_RxMsg8Can1(999);
+     Rx_PB_RxMsg9Can1(999);
+     Rx_PB_RxMsg10Can1(999);
+     Rx_PB_RxMsg11Can1(999);
+     Rx_PB_RxMsg12Can1(999);
+     Rx_PB_RxMsg13Can1(999);
+     Rx_PB_RxMsg14Can1(999);
+     Rx_PB_RxMsg15Can1(999);
+     Rx_PB_RxMsg1Can2(999);
+     Rx_PB_RxMsg2Can2(999);
+     Rx_PB_RxMsg3Can2(999);
+     Rx_PB_RxMsg4Can2(999);
+     Rx_PB_RxMsg5Can2(999);
+     Rx_PB_RxMsg6Can2(999);
+     Rx_PB_RxMsg7Can2(999);
+     Rx_PB_RxMsg8Can2(999);
+     Rx_PB_RxMsg9Can2(999);
+     Rx_PB_RxMsg10Can2(999);
+     Rx_PB_RxMsg11Can2(999);
+     Rx_PB_RxMsg12Can2(999);
+     Rx_PB_RxMsg13Can2(999);
+     Rx_PB_RxMsg14Can2(999);
+     Rx_PB_RxMsg15Can2(999);
+}
+
+void Rx_PB_RxMsg1Can1(long a)
+{
+     MsgPB_RxMsg1Can1.PB_RxMsg1Can1_Sig.phys = a;
+     MsgPB_RxMsg1Can1.byte(4) = 0;
+     MsgPB_RxMsg1Can1.byte(5) = 0;
+     MsgPB_RxMsg1Can1.byte(6) = 0;
+     MsgPB_RxMsg1Can1.byte(7) = 0;
+     output(MsgPB_RxMsg1Can1);
+}
+
+void Rx_PB_RxMsg2Can1(long a)
+{
+     MsgPB_RxMsg2Can1.PB_RxMsg2Can1_Sig.phys = a;
+     MsgPB_RxMsg2Can1.byte(4) = 0;
+     MsgPB_RxMsg2Can1.byte(5) = 0;
+     MsgPB_RxMsg2Can1.byte(6) = 0;
+     MsgPB_RxMsg2Can1.byte(7) = 0;
+     output(MsgPB_RxMsg2Can1);
+}
+
+void Rx_PB_RxMsg3Can1(long a)
+{
+     MsgPB_RxMsg3Can1.PB_RxMsg3Can1_Sig.phys = a;
+     MsgPB_RxMsg3Can1.byte(4) = 0;
+     MsgPB_RxMsg3Can1.byte(5) = 0;
+     MsgPB_RxMsg3Can1.byte(6) = 0;
+     MsgPB_RxMsg3Can1.byte(7) = 0;
+     output(MsgPB_RxMsg3Can1);
+}
+
+void Rx_PB_RxMsg4Can1(long a)
+{
+     MsgPB_RxMsg4Can1.PB_RxMsg4Can1_Sig.phys = a;
+     MsgPB_RxMsg4Can1.byte(4) = 0;
+     MsgPB_RxMsg4Can1.byte(5) = 0;
+     MsgPB_RxMsg4Can1.byte(6) = 0;
+     MsgPB_RxMsg4Can1.byte(7) = 0;
+     output(MsgPB_RxMsg4Can1);
+}
+
+void Rx_PB_RxMsg5Can1(long a)
+{
+     MsgPB_RxMsg5Can1.PB_RxMsg5Can1_Sig.phys = a;
+     MsgPB_RxMsg5Can1.byte(4) = 0;
+     MsgPB_RxMsg5Can1.byte(5) = 0;
+     MsgPB_RxMsg5Can1.byte(6) = 0;
+     MsgPB_RxMsg5Can1.byte(7) = 0;
+     output(MsgPB_RxMsg5Can1);
+}
+
+void Rx_PB_RxMsg6Can1(long a)
+{
+     MsgPB_RxMsg6Can1.PB_RxMsg6Can1_Sig.phys = a;
+     MsgPB_RxMsg6Can1.byte(4) = 0;
+     MsgPB_RxMsg6Can1.byte(5) = 0;
+     MsgPB_RxMsg6Can1.byte(6) = 0;
+     MsgPB_RxMsg6Can1.byte(7) = 0;
+     output(MsgPB_RxMsg6Can1);
+}
+
+void Rx_PB_RxMsg7Can1(long a)
+{
+     MsgPB_RxMsg7Can1.PB_RxMsg7Can1_Sig.phys = a;
+     MsgPB_RxMsg7Can1.byte(4) = 0;
+     MsgPB_RxMsg7Can1.byte(5) = 0;
+     MsgPB_RxMsg7Can1.byte(6) = 0;
+     MsgPB_RxMsg7Can1.byte(7) = 0;
+     output(MsgPB_RxMsg7Can1);
+}
+
+void Rx_PB_RxMsg8Can1(long a)
+{
+     MsgPB_RxMsg8Can1.PB_RxMsg8Can1_Sig.phys = a;
+     MsgPB_RxMsg8Can1.byte(4) = 0;
+     MsgPB_RxMsg8Can1.byte(5) = 0;
+     MsgPB_RxMsg8Can1.byte(6) = 0;
+     MsgPB_RxMsg8Can1.byte(7) = 0;
+     output(MsgPB_RxMsg8Can1);
+}
+
+void Rx_PB_RxMsg9Can1(long a)
+{
+     MsgPB_RxMsg9Can1.PB_RxMsg9Can1_Sig.phys = a;
+     MsgPB_RxMsg9Can1.byte(4) = 0;
+     MsgPB_RxMsg9Can1.byte(5) = 0;
+     MsgPB_RxMsg9Can1.byte(6) = 0;
+     MsgPB_RxMsg9Can1.byte(7) = 0;
+     output(MsgPB_RxMsg9Can1);
+}
+
+void Rx_PB_RxMsg10Can1(long a)
+{
+     MsgPB_RxMsg10Can1.PB_RxMsg10Can1_Sig.phys = a;
+     MsgPB_RxMsg10Can1.byte(4) = 0;
+     MsgPB_RxMsg10Can1.byte(5) = 0;
+     MsgPB_RxMsg10Can1.byte(6) = 0;
+     MsgPB_RxMsg10Can1.byte(7) = 0;
+     output(MsgPB_RxMsg10Can1);
+}
+
+void Rx_PB_RxMsg11Can1(long a)
+{
+     MsgPB_RxMsg11Can1.PB_RxMsg11Can1_Sig.phys = a;
+     MsgPB_RxMsg11Can1.byte(4) = 0;
+     MsgPB_RxMsg11Can1.byte(5) = 0;
+     MsgPB_RxMsg11Can1.byte(6) = 0;
+     MsgPB_RxMsg11Can1.byte(7) = 0;
+     output(MsgPB_RxMsg11Can1);
+}
+
+void Rx_PB_RxMsg12Can1(long a)
+{
+     MsgPB_RxMsg12Can1.PB_RxMsg12Can1_Sig.phys = a;
+     MsgPB_RxMsg12Can1.byte(4) = 0;
+     MsgPB_RxMsg12Can1.byte(5) = 0;
+     MsgPB_RxMsg12Can1.byte(6) = 0;
+     MsgPB_RxMsg12Can1.byte(7) = 0;
+     output(MsgPB_RxMsg12Can1);
+}
+
+void Rx_PB_RxMsg13Can1(long a)
+{
+     MsgPB_RxMsg13Can1.PB_RxMsg13Can1_Sig.phys = a;
+     MsgPB_RxMsg13Can1.byte(4) = 0;
+     MsgPB_RxMsg13Can1.byte(5) = 0;
+     MsgPB_RxMsg13Can1.byte(6) = 0;
+     MsgPB_RxMsg13Can1.byte(7) = 0;
+     output(MsgPB_RxMsg13Can1);
+}
+
+void Rx_PB_RxMsg14Can1(long a)
+{
+     MsgPB_RxMsg14Can1.PB_RxMsg14Can1_Sig.phys = a;
+     MsgPB_RxMsg14Can1.byte(4) = 0;
+     MsgPB_RxMsg14Can1.byte(5) = 0;
+     MsgPB_RxMsg14Can1.byte(6) = 0;
+     MsgPB_RxMsg14Can1.byte(7) = 0;
+     output(MsgPB_RxMsg14Can1);
+}
+
+void Rx_PB_RxMsg15Can1(long a)
+{
+     MsgPB_RxMsg15Can1.PB_RxMsg15Can1_Sig.phys = a;
+     MsgPB_RxMsg15Can1.byte(4) = 0;
+     MsgPB_RxMsg15Can1.byte(5) = 0;
+     MsgPB_RxMsg15Can1.byte(6) = 0;
+     MsgPB_RxMsg15Can1.byte(7) = 0;
+     output(MsgPB_RxMsg15Can1);
+}
+
+void Rx_PB_RxMsg1Can2(long a)
+{
+     MsgPB_RxMsg1Can2.PB_RxMsg1Can2_Sig.phys = a;
+     MsgPB_RxMsg1Can2.byte(4) = 0;
+     MsgPB_RxMsg1Can2.byte(5) = 0;
+     MsgPB_RxMsg1Can2.byte(6) = 0;
+     MsgPB_RxMsg1Can2.byte(7) = 0;
+     output(MsgPB_RxMsg1Can2);
+}
+
+void Rx_PB_RxMsg2Can2(long a)
+{
+     MsgPB_RxMsg2Can2.PB_RxMsg2Can2_Sig.phys = a;
+     MsgPB_RxMsg2Can2.byte(4) = 0;
+     MsgPB_RxMsg2Can2.byte(5) = 0;
+     MsgPB_RxMsg2Can2.byte(6) = 0;
+     MsgPB_RxMsg2Can2.byte(7) = 0;
+     output(MsgPB_RxMsg2Can2);
+}
+
+void Rx_PB_RxMsg3Can2(long a)
+{
+     MsgPB_RxMsg3Can2.PB_RxMsg3Can2_Sig.phys = a;
+     MsgPB_RxMsg3Can2.byte(4) = 0;
+     MsgPB_RxMsg3Can2.byte(5) = 0;
+     MsgPB_RxMsg3Can2.byte(6) = 0;
+     MsgPB_RxMsg3Can2.byte(7) = 0;
+     output(MsgPB_RxMsg3Can2);
+}
+
+void Rx_PB_RxMsg4Can2(long a)
+{
+     MsgPB_RxMsg4Can2.PB_RxMsg4Can2_Sig.phys = a;
+     MsgPB_RxMsg4Can2.byte(4) = 0;
+     MsgPB_RxMsg4Can2.byte(5) = 0;
+     MsgPB_RxMsg4Can2.byte(6) = 0;
+     MsgPB_RxMsg4Can2.byte(7) = 0;
+     output(MsgPB_RxMsg4Can2);
+}
+
+void Rx_PB_RxMsg5Can2(long a)
+{
+     MsgPB_RxMsg5Can2.PB_RxMsg5Can2_Sig.phys = a;
+     MsgPB_RxMsg5Can2.byte(4) = 0;
+     MsgPB_RxMsg5Can2.byte(5) = 0;
+     MsgPB_RxMsg5Can2.byte(6) = 0;
+     MsgPB_RxMsg5Can2.byte(7) = 0;
+     output(MsgPB_RxMsg5Can2);
+}
+
+void Rx_PB_RxMsg6Can2(long a)
+{
+     MsgPB_RxMsg6Can2.PB_RxMsg6Can2_Sig.phys = a;
+     MsgPB_RxMsg6Can2.byte(4) = 0;
+     MsgPB_RxMsg6Can2.byte(5) = 0;
+     MsgPB_RxMsg6Can2.byte(6) = 0;
+     MsgPB_RxMsg6Can2.byte(7) = 0;
+     output(MsgPB_RxMsg6Can2);
+}
+
+void Rx_PB_RxMsg7Can2(long a)
+{
+     MsgPB_RxMsg7Can2.PB_RxMsg7Can2_Sig.phys = a;
+     MsgPB_RxMsg7Can2.byte(4) = 0;
+     MsgPB_RxMsg7Can2.byte(5) = 0;
+     MsgPB_RxMsg7Can2.byte(6) = 0;
+     MsgPB_RxMsg7Can2.byte(7) = 0;
+     output(MsgPB_RxMsg7Can2);
+}
+
+void Rx_PB_RxMsg8Can2(long a)
+{
+     MsgPB_RxMsg8Can2.PB_RxMsg8Can2_Sig.phys = a;
+     MsgPB_RxMsg8Can2.byte(4) = 0;
+     MsgPB_RxMsg8Can2.byte(5) = 0;
+     MsgPB_RxMsg8Can2.byte(6) = 0;
+     MsgPB_RxMsg8Can2.byte(7) = 0;
+     output(MsgPB_RxMsg8Can2);
+}
+
+void Rx_PB_RxMsg9Can2(long a)
+{
+     MsgPB_RxMsg9Can2.PB_RxMsg9Can2_Sig.phys = a;
+     MsgPB_RxMsg9Can2.byte(4) = 0;
+     MsgPB_RxMsg9Can2.byte(5) = 0;
+     MsgPB_RxMsg9Can2.byte(6) = 0;
+     MsgPB_RxMsg9Can2.byte(7) = 0;
+     output(MsgPB_RxMsg9Can2);
+}
+
+void Rx_PB_RxMsg10Can2(long a)
+{
+     MsgPB_RxMsg10Can2.PB_RxMsg10Can2_Sig.phys = a;
+     MsgPB_RxMsg10Can2.byte(4) = 0;
+     MsgPB_RxMsg10Can2.byte(5) = 0;
+     MsgPB_RxMsg10Can2.byte(6) = 0;
+     MsgPB_RxMsg10Can2.byte(7) = 0;
+     output(MsgPB_RxMsg10Can2);
+}
+
+void Rx_PB_RxMsg11Can2(long a)
+{
+     MsgPB_RxMsg11Can2.PB_RxMsg11Can2_Sig.phys = a;
+     MsgPB_RxMsg11Can2.byte(4) = 0;
+     MsgPB_RxMsg11Can2.byte(5) = 0;
+     MsgPB_RxMsg11Can2.byte(6) = 0;
+     MsgPB_RxMsg11Can2.byte(7) = 0;
+     output(MsgPB_RxMsg11Can2);
+}
+
+void Rx_PB_RxMsg12Can2(long a)
+{
+     MsgPB_RxMsg12Can2.PB_RxMsg12Can2_Sig.phys = a;
+     MsgPB_RxMsg12Can2.byte(4) = 0;
+     MsgPB_RxMsg12Can2.byte(5) = 0;
+     MsgPB_RxMsg12Can2.byte(6) = 0;
+     MsgPB_RxMsg12Can2.byte(7) = 0;
+     output(MsgPB_RxMsg12Can2);
+}
+
+void Rx_PB_RxMsg13Can2(long a)
+{
+     MsgPB_RxMsg13Can2.PB_RxMsg13Can2_Sig.phys = a;
+     MsgPB_RxMsg13Can2.byte(4) = 0;
+     MsgPB_RxMsg13Can2.byte(5) = 0;
+     MsgPB_RxMsg13Can2.byte(6) = 0;
+     MsgPB_RxMsg13Can2.byte(7) = 0;
+     output(MsgPB_RxMsg13Can2);
+}
+
+void Rx_PB_RxMsg14Can2(long a)
+{
+     MsgPB_RxMsg14Can2.PB_RxMsg14Can2_Sig.phys = a;
+     MsgPB_RxMsg14Can2.byte(4) = 0;
+     MsgPB_RxMsg14Can2.byte(5) = 0;
+     MsgPB_RxMsg14Can2.byte(6) = 0;
+     MsgPB_RxMsg14Can2.byte(7) = 0;
+     output(MsgPB_RxMsg14Can2);
+}
+
+void Rx_PB_RxMsg15Can2(long a)
+{
+     MsgPB_RxMsg15Can2.PB_RxMsg15Can2_Sig.phys = a;
+     MsgPB_RxMsg15Can2.byte(4) = 0;
+     MsgPB_RxMsg15Can2.byte(5) = 0;
+     MsgPB_RxMsg15Can2.byte(6) = 0;
+     MsgPB_RxMsg15Can2.byte(7) = 0;
+     output(MsgPB_RxMsg15Can2);
+}
