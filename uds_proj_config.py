@@ -1,7 +1,4 @@
-from can.interfaces.vector import VectorBus
-from udsoncan.connections import PythonIsoTpConnection
-from udsoncan.client import Client
-import isotp
+
 import udsoncan
 import struct
 

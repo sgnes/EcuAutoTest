@@ -1,0 +1,15 @@
+{
+    "ProjectName":"TestProject",
+    "EcuDevic":"LauterbachEcuDevice",
+    "LauterbachConfig":
+    {
+        "T32Path":"",
+        "CPU":"TC387QP",
+        "FlashCmm":"",
+        "SetupCmm":"",
+        "ElfFile":"",
+        "HexFile":""
+
+    }
+
+}
